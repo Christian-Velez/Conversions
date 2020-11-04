@@ -1,0 +1,294 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+body{
+    background-color: #1a1b1e;
+}
+h1{
+    display: inline;
+    color: #f6f8fa;
+}
+h2{
+    color: #f6f8fa;
+    border-bottom: solid;
+    border-color: #f6b93b;
+}
+select{
+    display: inline;
+    font-size: large;
+    background-color: #d1d5da;
+}
+option{
+    font-size: large;
+}
+input{
+    font-size: large;
+    outline-color: transparent;
+    margin-right: 1%;
+}
+button{
+    margin-top: 4%;
+    margin-bottom: 10%;
+    border-radius: 0;
+    width: 15%;
+    font-size: large;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+    button:hover{
+        color: #ffffff !important;
+        background: #f6b93b;
+        border-color: #f6b93b !important;
+        transition: all 0.4s ease 0s;   
+    }
+
+
+
+#head{
+    padding: 1%;
+    width: 80%;
+    margin-left: 8%;
+    border-bottom-style: solid;
+    border-color: #fafbfc;
+}
+#head img{
+    width: 5%;
+}
+
+.center{
+    text-align: center;
+    margin-top: 15%;
+    width: 70%;
+    margin-left: 13%;
+}
+
+
+
+#result{
+    margin-top: 4%;
+    width: 60%;
+    box-sizing: initial;
+    margin-left: 20%;
+}
+
+
+
+/*Boton para cambiar de color*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f6b93b;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#6a737d;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #6a737d;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+@media only screen and (max-width: 1500px){
+    button{
+        width: 15%;
+    }
+    h2{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    option{
+        font-size: medium;
+    }
+    button{
+        width: 15%;
+        margin-bottom: 10%;
+    }
+    #result{
+        width: 70%;
+        margin-left: 15%;
+    }
+    h2{
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .center{
+        width: 85%;
+        margin-left: 7.3%;
+    }
+    input{
+        display: block;
+        width: 70%;
+        margin-left: 14.5%;
+    }
+    button{
+        width: 40%;
+        font-size: larger;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    #result{
+        width: 90%;
+        margin-left: 5%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    
+    #from{
+        float: left;
+        margin-top: 7%;
+        margin-left: 15%;
+    }
+    #to{
+        float: right;
+        margin-top: 7%;
+        margin-right: 15%;
+    }
+}
+
+
+@media only screen and (max-width: 790px){
+    #head{
+        margin-top: 5%;
+        padding: 1%;
+        padding-bottom: 1%;
+    }
+        #head img{
+            width: 10%;
+        }
+
+    .center{
+        width: 80%;
+        margin-left: 9%;
+    }
+    input{
+        font-size: 120%;
+        width: 100%;
+        margin-left: 0;
+    }
+    #from{
+        float: left;
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+    #to{
+        float: right;
+        margin-top: 7%;
+        margin-right: 5%;
+    }
+    button{
+        margin-top: 20%;
+    }
+    h1{
+        margin-top: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 520px){
+    select{
+        display: block;
+    }
+    #from{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 45%;
+    }
+    #to{
+        position: absolute;
+        margin-top: 23%;
+        margin-left: 45%;
+    }
+    .center{
+        text-align: left;
+    }
+    #toText{
+        text-align: left;
+        position: absolute;
+        margin-top: 21%;
+        margin-left: 25%;
+
+    }
+    button{
+        margin-top: 40%;
+        margin-left: 29%;
+    }
+    #result{
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 411px){
+    #from{
+        margin-left: 40%;
+    }
+    #to{
+        margin-left: 40%;
+    }
+    #toText{
+        margin-left: 20%;
+        font-size: 180%;
+    }
+}
+
+

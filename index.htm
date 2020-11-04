@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+    <header id="head">
+        <img src="convert.png" alt="" >
+        <h1>Conversions</h1>
+
+        <label class="switch">
+            <input type="checkbox" id="ok">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <div class="center">
+        <input type="text" id="textFrom" />
+
+        <select name="" id="from">
+            <option>Binary</option>
+            <option>Decimal</option>
+            <option>Hexadecimal</option>
+        </select>
+        <h1 id="toText">to:</h1>
+    
+
+        <select name="" id="to">
+            <option>Binary</option>
+            <option>Decimal</option>
+            <option>Hexadecimal</option>
+        </select>
+        <br>
+        <button id="convert">Convert</button>
+
+        <div id="result">
+        
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
