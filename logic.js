@@ -39,6 +39,7 @@ function start(){
     if(localStorage.To){
         to.value = localStorage.To;
     }
+    maxLength(allInputs,option);
     option.addEventListener("change", ()=>{
         input.value = "";
         maxLength(allInputs,option);
